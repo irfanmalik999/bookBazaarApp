@@ -1,0 +1,83 @@
+
+[
+    {
+        "id":1,
+        "name": "Artifi General Inte",
+        "title":"AGI possesses the ability to understand human can do.",
+        "price":0,
+        "category":"Free",
+        "image":"/lists/AGI_Book.jpg"
+    },
+    {
+        "id": 2,
+        "name": "To Kill a Mockingbird",
+        "title": "A Classic of American Literature",
+        "price":0,
+        "category": "Free",
+        "image":"/lists/To_Kill_a_Mockingbird.png"
+      },
+      {
+        "id": 3,
+        "name": "Doglaapan",
+        "title": "Life Story of Ashneer Grover",
+        "price":0,
+        "category": "Free",
+        "image":"/lists/doglapan.jpg"
+      },
+      {
+        "id": 4,
+        "name": "The Great Gatsby",
+        "title": "A Story of the Jazz Age",
+        "price":0,
+        "category": "Free",
+        "image":"/lists/great_gatsby.jpg"
+      },
+      {
+        "id": 5,
+        "name": "The Catcher in the Rye",
+        "title": "A Controversial Coming-of-Age Story",
+        "price":0,
+        "category": "Classic",
+        "image":"/lists/AGI_Book.jpg"
+      },
+      {
+        "id": 6,
+        "name": "The Hobbit",
+        "title": "A Fantasy Adventure",
+        "price":0,
+        "category": "Free",
+        "image":"/lists/AGI_Book.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Pride and Prejudice",
+        "title": "A Romantic Classic",
+        "price":0,
+        "category": "Romance",
+        "image":"/lists/AGI_Book.jpg"
+      },
+      {
+        "id": 8,
+        "name": "The Lord of the Rings",
+        "title": "An Epic Fantasy Saga",
+        "price":0,
+        "category": "Free",
+        "image":"/lists/AGI_Book.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Harry Potter and the Sorcerer's Stone",
+        "title": "A Magical Beginning",
+        "price":0,
+        "category": "Fantasy",
+        "image":"/lists/AGI_Book.jpg"
+      },
+      {
+        "id": 10,
+        "name": "The Alchemist",
+        "title": "A Journey of Self-Discovery",
+        "price":0,
+        "category": "Philosophy",
+        "image":"/lists/AGI_Book.jpg"
+      }
+]
