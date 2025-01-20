@@ -22,7 +22,7 @@ const Banner = () => {
                         <input type="text" className="grow " placeholder="Email" />
                     </label>
                 </div>  
-                <button className="btn mt-6 btn-secondary">Secondary</button>
+                <button className=" mt-6 bg-blue-600 px-8 py-2 rounded-lg text-white hover:bg-blue-700 ">Get Started</button>
             </div>
 
             <div className="RightBanner order-1 w-full md:w-1/2 flex justify-center items-center  mt-20   ">

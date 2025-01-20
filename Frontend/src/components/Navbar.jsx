@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Login from './Login';
+import { useAuth } from '../context/AuthProvider';
+import Logout from './Logout';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+    const [authUser, setAuthUser] = useAuth()
+    console.log("CONTEXT DATA",authUser)
 
     const [theme, setTheme] = useState(localStorage.getItem('theme')?localStorage.getItem("theme"):"light")
     const element = document.documentElement;
@@ -39,8 +45,8 @@ const Navbar = () => {
         <>
             <li><a href='/' >Home</a></li>
             <li><a href='/course' >Course</a></li>
-            <li><a href='/' >Contact</a></li>
-            <li><a href='/' >About</a></li>
+            <li><a href='/contact' >Contact</a></li>
+            <li><a href='/about' >About</a></li>
         </>
     )
 
@@ -70,7 +76,7 @@ const Navbar = () => {
                          { navItems } 
                     </ul>
                     </div>
-                    <a className=" text-xl font-bold cursor-pointer ">bookBazaar</a>
+                    <Link to="/" ><a className=" text-xl font-bold cursor-pointer ">bookBazaar</a></Link>
                 </div>
                 
                 <div className="navbar-end space-x-3 ">
@@ -108,12 +114,18 @@ const Navbar = () => {
                         </svg>
                     </label>
 
-                    <div className="  ">
-                        <a onClick={()=>
-                            document.getElementById("my_modal_3").showModal()
-                        } className=" bg-black text-white p-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer ">Login</a>
-                    </div>
-                    <Login/>
+                    {
+                        authUser ? <Logout /> : 
+                        <div className="  ">
+                            <a onClick={()=>
+                                document.getElementById("my_modal_3").showModal()
+                            } className=" bg-black text-white p-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer ">Login</a>
+                            <Login/>
+                        </div>
+                        
+                    }
+
+                    
                 </div>
                 
             </div>

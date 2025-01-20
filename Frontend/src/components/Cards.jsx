@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Cards = ({ item }) => {
-    console.log(item, "ITEMS")
+    // console.log(item, "ITEMS")
   return (
     <>
         <div className="mt-4 my-3 p-3 ">
